@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    min-height :100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+.menu{
+    width: 50px;
+    cursor: pointer;
+}
+nav {
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display:inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
+    background: linear-gradient(to right, rgb(228, 127, 140), rgb(105, 222, 226));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.look{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.col{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+.col h2{
+    font-size: 50px;
+    background: linear-gradient(to right, rgb(228, 160, 134), rgb(92, 179, 92));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.col h3{
+    font-size: 30px;
+    font-weight: 100;
+    margin: 16px 0 10px;
+}
+.col p{
+    font-size: 17px;
+     
+     font-weight: 100;
+     margin: 13px 0 12px;
+}
+.col h4{
+    margin: 19px 0;
+    font-size: 15px;
+}
+button
+{
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    background: linear-gradient(to left, rgb(228, 127, 140), rgb(105, 222, 226));
+    border-radius: 10px;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+button:hover{
+    width: 160px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.col::after{
+    content: '';
+    width: 10px;
+    height: 57%;
+    left: -40px;
+    background: linear-gradient(to right, rgb(228, 127, 140), rgb(105, 222, 226));
+    position: absolute;
+    top: 8px;
+}
+.col2{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-basis: 60%;
+}
+.col2 .im{
+    width: 90%;
+}
+.colorbox{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to right, rgb(228, 127, 140), rgb(105, 222, 226));
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+    width: 80%;
+    z-index: -1;
+    transform: translateX(125px);
+}
+.add img{
+    width: 35px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.add{
+    text-align: center;
+    color:#ffffff;
+}
+.social img{
+    width: 30px;
+    height: 28px;
+    margin: 20px;
+    cursor: pointer;
+}
+.social{
+    text-align: center;
+    background: linear-gradient(to right, rgb(228, 127, 140), rgb(105, 222, 226));
+}
+@media only screen and (max-width:700px)
+{
+    nav ul{
+        width: 100%;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+        background: linear-gradient(to right, rgb(228, 127, 140rgb));
+    }
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .menu
+    {
+        display: block;
+    }
+     #list{
+        overflow: hidden;
+        transition: 0.5s;
+     }
+     .look{
+        flex-direction: column-reverse;
+        margin: 70px 0;
+     }
+     .col2{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+     }
+     .col2 .im{
+          width: 77%;
+     }
+     .colorbox{
+        transform: translatex(75px);
+     }
+     .col{
+        flex-basis: 100%;
+     }
+     .col h2{
+        font-size: 35px;
+     }
+     .col h3{
+        font-size: 25px;
+     }
+     .col h4{
+        font-size: 23px;
+     }
+     .col p{
+        font-size: 14px;
+     }
+}

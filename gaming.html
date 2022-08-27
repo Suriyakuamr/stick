@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gaming.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images str/PngItem_1746660.png"  class="logo">
+            <nav>
+                <ul id="list" > 
+                   <li> <a href="">HOME</a></li>
+                   <li> <a href="">DEMO</a> </li>
+                   <li>  <a href="">SPECIFICATIONS</a> </li>
+                   <li>  <a href="">GAMES</a> </li>
+               </ul>
+            </nav>
+            <img src="images str/home-menu-icon-7.jpg" class="menu" onclicl="togglemenu()">
+        </div>
+         
+        <div class="look">
+            <div class="col">
+                <h2>PS5 v3 <br>DUAL SHOCK 4 </h2>
+                <h3>wireless ps </h3>
+                <p>IT'S A HIGH LEVEL GAMING</p>
+                <h4>$50.00</h4>
+                <button type="button">BUY NOW </button>
+            </div>
+            <div class="col2">
+                <img src="images str/kindpng_240638.png" class="im">
+                <div class="colorbox"></div>
+                <div class="add">
+                    <img src="images str/shopping-cart.png"  >
+                    <p> <small>ADD TO CART</small> </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social">
+            <img src="images str/logo-ig-png-32473.png" alt="">
+            <img src="images str/logo-facebookpng-32242.png" alt="">
+            <img src="images str/logo-twitter-png-5860.png" alt="">
+        </div>
+    </div>
+ 
+    <script>
+        var menulist= document.getElementById("menulist");
+        menulist.style.maxHeight="0px";
+        function togglemenu( )
+        {
+            if( menulist.style.maxHeight=="0px")
+            {
+                menulist.style.maxHeight=="130px"
+            }
+            else{
+                menulist.style.maxHeight=="0px"
+            }
+        }
+    </script>
+</body>
+</html>
